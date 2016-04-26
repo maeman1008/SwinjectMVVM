@@ -1,1 +1,10 @@
+PODS:
+  - Himotoki (2.0.1)
+
+DEPENDENCIES:
+  - Himotoki (~> 2.0)
+
+SPEC CHECKSUMS:
+  Himotoki: 21fa47e457cc7da39996fe7825a0e97b00344cf1
+
 COCOAPODS: 0.39.0
