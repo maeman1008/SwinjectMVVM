@@ -18,6 +18,7 @@
 		439520741CD0FCF3005CCE81 /* ViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A66FEE1CD0F9F400324170 /* ViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439520751CD0FCFA005CCE81 /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A670101CD0F9FF00324170 /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439520771CD0FD7F005CCE81 /* ImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520761CD0FD7F005CCE81 /* ImageEntity.swift */; };
+		439520791CD0FE56005CCE81 /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520781CD0FE56005CCE81 /* ResponseEntity.swift */; };
 		43A66FD31CD0F9CD00324170 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A66FC91CD0F9CD00324170 /* Model.framework */; };
 		43A66FDA1CD0F9CD00324170 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A66FD91CD0F9CD00324170 /* ModelTests.swift */; };
 		43A66FDE1CD0F9CD00324170 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A66FC91CD0F9CD00324170 /* Model.framework */; };
@@ -146,6 +147,7 @@
 		431589F21CCFC18800F9D691 /* SwinjectMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectMVVMUITests.swift; sourceTree = "<group>"; };
 		431589F41CCFC18800F9D691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		439520761CD0FD7F005CCE81 /* ImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntity.swift; sourceTree = "<group>"; };
+		439520781CD0FE56005CCE81 /* ResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseEntity.swift; sourceTree = "<group>"; };
 		43A66FC91CD0F9CD00324170 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A66FCB1CD0F9CD00324170 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		43A66FCD1CD0F9CD00324170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				439520761CD0FD7F005CCE81 /* ImageEntity.swift */,
+				439520781CD0FE56005CCE81 /* ResponseEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -807,6 +810,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439520791CD0FE56005CCE81 /* ResponseEntity.swift in Sources */,
 				439520771CD0FD7F005CCE81 /* ImageEntity.swift in Sources */,
 				43CF3F2A1CCFCCBA00621B02 /* Config.swift in Sources */,
 				431589D51CCFC18800F9D691 /* ViewController.swift in Sources */,
