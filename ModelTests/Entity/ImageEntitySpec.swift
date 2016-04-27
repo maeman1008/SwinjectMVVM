@@ -13,9 +13,11 @@ import Himotoki
 
 class ImageEntitySpec: QuickSpec {
     override func spec() {
-        let imageJSON = ImageEntityFactory.buildJSON()
+        
+        let json = ImageEntityFactory.buildJSON()
+        
         it("parses JSON data to create a new instance.") {
-            let image: ImageEntity? = try? decodeValue(imageJSON)
+            let image: ImageEntity? = try? decodeValue(json)
             
             expect(image).notTo(beNil())
             expect(image?.id) == 12345
@@ -34,25 +36,28 @@ class ImageEntitySpec: QuickSpec {
             expect(image?.tags) == ["a", "b c", "d"]
             expect(image?.username) == "Swinject"
         }
+        
         it("gets an empty array if tags element is nil.") {
-            var missingJSON = imageJSON
+            var missingJSON = json
             missingJSON["tags"] = nil
             let image: ImageEntity? = try? decodeValue(missingJSON)
             
             expect(image).notTo(beNil())
             expect(image?.tags.isEmpty).to(beTrue())
         }
+        
         it("throws an error if any of JSON elements except tags is missing.") {
-            for key in imageJSON.keys where key != "tags" {
-                var missingJSON = imageJSON
+            for key in json.keys where key != "tags" {
+                var missingJSON = json
                 missingJSON[key] = nil
                 let image: ImageEntity? = try? decodeValue(missingJSON)
                 
                 expect(image).to(beNil())
             }
         }
+        
         it("ignores an extra JOSN element.") {
-            var extraJSON = imageJSON
+            var extraJSON = json
             extraJSON["extraKey"] = "extra element"
             let image: ImageEntity? = try? decodeValue(extraJSON)
             
