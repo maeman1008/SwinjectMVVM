@@ -17,10 +17,13 @@
 		439520731CD0FCEA005CCE81 /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A66FCB1CD0F9CD00324170 /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439520741CD0FCF3005CCE81 /* ViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A66FEE1CD0F9F400324170 /* ViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439520751CD0FCFA005CCE81 /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A670101CD0F9FF00324170 /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		439520771CD0FD7F005CCE81 /* ImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520761CD0FD7F005CCE81 /* ImageEntity.swift */; };
-		439520791CD0FE56005CCE81 /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520781CD0FE56005CCE81 /* ResponseEntity.swift */; };
+		4395207D1CD10005005CCE81 /* ImageEntitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395207B1CD0FFCC005CCE81 /* ImageEntitySpec.swift */; };
+		4395207E1CD1014D005CCE81 /* ImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520761CD0FD7F005CCE81 /* ImageEntity.swift */; };
+		4395207F1CD1018C005CCE81 /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520781CD0FE56005CCE81 /* ResponseEntity.swift */; };
+		439520821CD101E3005CCE81 /* ImageEntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520811CD101E3005CCE81 /* ImageEntityFactory.swift */; };
+		439520831CD1028E005CCE81 /* ImageEntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520811CD101E3005CCE81 /* ImageEntityFactory.swift */; };
+		439520841CD1028F005CCE81 /* ImageEntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439520811CD101E3005CCE81 /* ImageEntityFactory.swift */; };
 		43A66FD31CD0F9CD00324170 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A66FC91CD0F9CD00324170 /* Model.framework */; };
-		43A66FDA1CD0F9CD00324170 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A66FD91CD0F9CD00324170 /* ModelTests.swift */; };
 		43A66FDE1CD0F9CD00324170 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A66FC91CD0F9CD00324170 /* Model.framework */; };
 		43A66FDF1CD0F9CD00324170 /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43A66FC91CD0F9CD00324170 /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43A66FF61CD0F9F400324170 /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A66FEC1CD0F9F400324170 /* ViewModel.framework */; };
@@ -150,11 +153,12 @@
 		431589F41CCFC18800F9D691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		439520761CD0FD7F005CCE81 /* ImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntity.swift; sourceTree = "<group>"; };
 		439520781CD0FE56005CCE81 /* ResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseEntity.swift; sourceTree = "<group>"; };
+		4395207B1CD0FFCC005CCE81 /* ImageEntitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntitySpec.swift; sourceTree = "<group>"; };
+		439520811CD101E3005CCE81 /* ImageEntityFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntityFactory.swift; sourceTree = "<group>"; };
 		43A66FC91CD0F9CD00324170 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A66FCB1CD0F9CD00324170 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		43A66FCD1CD0F9CD00324170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A66FD21CD0F9CD00324170 /* ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43A66FD91CD0F9CD00324170 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		43A66FDB1CD0F9CD00324170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A66FEC1CD0F9F400324170 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A66FEE1CD0F9F400324170 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
@@ -325,6 +329,7 @@
 		431589E61CCFC18800F9D691 /* SwinjectMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
+				439520801CD101C1005CCE81 /* Factories */,
 				43A6701D1CD0F9FF00324170 /* ViewTests */,
 				43A66FFB1CD0F9F400324170 /* ViewModelTests */,
 				43A66FD81CD0F9CD00324170 /* ModelTests */,
@@ -359,6 +364,22 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4395207A1CD0FFB0005CCE81 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4395207B1CD0FFCC005CCE81 /* ImageEntitySpec.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		439520801CD101C1005CCE81 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				439520811CD101E3005CCE81 /* ImageEntityFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		43A66FCA1CD0F9CD00324170 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,7 +394,7 @@
 		43A66FD81CD0F9CD00324170 /* ModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				43A66FD91CD0F9CD00324170 /* ModelTests.swift */,
+				4395207A1CD0FFB0005CCE81 /* Entity */,
 				43A66FDB1CD0F9CD00324170 /* Info.plist */,
 			);
 			name = ModelTests;
@@ -866,8 +887,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439520791CD0FE56005CCE81 /* ResponseEntity.swift in Sources */,
-				439520771CD0FD7F005CCE81 /* ImageEntity.swift in Sources */,
 				43CF3F2A1CCFCCBA00621B02 /* Config.swift in Sources */,
 				431589D51CCFC18800F9D691 /* ViewController.swift in Sources */,
 				431589D31CCFC18800F9D691 /* AppDelegate.swift in Sources */,
@@ -879,6 +898,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				431589E81CCFC18800F9D691 /* SwinjectMVVMTests.swift in Sources */,
+				439520821CD101E3005CCE81 /* ImageEntityFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,6 +914,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4395207E1CD1014D005CCE81 /* ImageEntity.swift in Sources */,
+				4395207F1CD1018C005CCE81 /* ResponseEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,7 +923,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43A66FDA1CD0F9CD00324170 /* ModelTests.swift in Sources */,
+				4395207D1CD10005005CCE81 /* ImageEntitySpec.swift in Sources */,
+				439520831CD1028E005CCE81 /* ImageEntityFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,6 +940,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A66FFD1CD0F9F400324170 /* ViewModelTests.swift in Sources */,
+				439520841CD1028F005CCE81 /* ImageEntityFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,6 +1122,7 @@
 			baseConfigurationReference = 0CC0C88CB4A80DCC2C8F39AF /* Pods-SwinjectMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwinjectMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ika.SwinjectMVVM;
@@ -1110,6 +1135,7 @@
 			baseConfigurationReference = 595C5F28135063AD750A2824 /* Pods-SwinjectMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwinjectMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ika.SwinjectMVVM;
