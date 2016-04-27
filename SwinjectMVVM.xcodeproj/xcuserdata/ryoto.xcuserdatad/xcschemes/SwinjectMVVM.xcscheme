@@ -48,6 +48,36 @@
                ReferencedContainer = "container:SwinjectMVVM.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43A66FD11CD0F9CD00324170"
+               BuildableName = "ModelTests.xctest"
+               BlueprintName = "ModelTests"
+               ReferencedContainer = "container:SwinjectMVVM.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43A66FF41CD0F9F400324170"
+               BuildableName = "ViewModelTests.xctest"
+               BlueprintName = "ViewModelTests"
+               ReferencedContainer = "container:SwinjectMVVM.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43A670161CD0F9FF00324170"
+               BuildableName = "ViewTests.xctest"
+               BlueprintName = "ViewTests"
+               ReferencedContainer = "container:SwinjectMVVM.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
