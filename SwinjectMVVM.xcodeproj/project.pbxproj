@@ -40,6 +40,7 @@
 		43A670371CD0FC9300324170 /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A66FEC1CD0F9F400324170 /* ViewModel.framework */; };
 		43CF3F2A1CCFCCBA00621B02 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF3F291CCFCCBA00621B02 /* Config.swift */; };
 		79693238CF22E161A73AED81 /* Pods_SwinjectMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7991C7793948D7C49AAAF780 /* Pods_SwinjectMVVM.framework */; };
+		B87FFF6D92891051C7DFE62F /* Pods_SwinjectMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3198159B2A605D75A1095E /* Pods_SwinjectMVVMTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 
 /* Begin PBXFileReference section */
 		0CC0C88CB4A80DCC2C8F39AF /* Pods-SwinjectMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectMVVM/Pods-SwinjectMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		1F3198159B2A605D75A1095E /* Pods_SwinjectMVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwinjectMVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431589CF1CCFC18800F9D691 /* SwinjectMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwinjectMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		431589D21CCFC18800F9D691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		431589D41CCFC18800F9D691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,7 +170,9 @@
 		43A670201CD0F9FF00324170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43CF3F291CCFCCBA00621B02 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		595C5F28135063AD750A2824 /* Pods-SwinjectMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectMVVM/Pods-SwinjectMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		75BB0091D256162A62B2658F /* Pods-SwinjectMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectMVVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectMVVMTests/Pods-SwinjectMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7991C7793948D7C49AAAF780 /* Pods_SwinjectMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwinjectMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F858D66D2B01B58AE2FD7971 /* Pods-SwinjectMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectMVVMTests/Pods-SwinjectMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 				43A670351CD0FC9300324170 /* Model.framework in Frameworks */,
 				43A670361CD0FC9300324170 /* View.framework in Frameworks */,
 				43A670371CD0FC9300324170 /* ViewModel.framework in Frameworks */,
+				B87FFF6D92891051C7DFE62F /* Pods_SwinjectMVVMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				7991C7793948D7C49AAAF780 /* Pods_SwinjectMVVM.framework */,
+				1F3198159B2A605D75A1095E /* Pods_SwinjectMVVMTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 			children = (
 				0CC0C88CB4A80DCC2C8F39AF /* Pods-SwinjectMVVM.debug.xcconfig */,
 				595C5F28135063AD750A2824 /* Pods-SwinjectMVVM.release.xcconfig */,
+				75BB0091D256162A62B2658F /* Pods-SwinjectMVVMTests.debug.xcconfig */,
+				F858D66D2B01B58AE2FD7971 /* Pods-SwinjectMVVMTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -479,9 +487,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 431589FA1CCFC18800F9D691 /* Build configuration list for PBXNativeTarget "SwinjectMVVMTests" */;
 			buildPhases = (
+				690B2F012F7075F8793AF39A /* Check Pods Manifest.lock */,
 				431589DF1CCFC18800F9D691 /* Sources */,
 				431589E01CCFC18800F9D691 /* Frameworks */,
 				431589E11CCFC18800F9D691 /* Resources */,
+				C9BEDD54C86EB70DB04A1963 /* Embed Pods Frameworks */,
+				019F51BD643ACCE25813652B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -758,7 +769,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		019F51BD643ACCE25813652B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectMVVMTests/Pods-SwinjectMVVMTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5C734DB15375DC0E5832B781 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		690B2F012F7075F8793AF39A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -801,6 +842,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectMVVM/Pods-SwinjectMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9BEDD54C86EB70DB04A1963 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectMVVMTests/Pods-SwinjectMVVMTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1063,6 +1119,7 @@
 		};
 		431589FB1CCFC18800F9D691 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75BB0091D256162A62B2658F /* Pods-SwinjectMVVMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwinjectMVVMTests/Info.plist;
@@ -1075,6 +1132,7 @@
 		};
 		431589FC1CCFC18800F9D691 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F858D66D2B01B58AE2FD7971 /* Pods-SwinjectMVVMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwinjectMVVMTests/Info.plist;
