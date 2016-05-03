@@ -15,6 +15,7 @@ target 'SwinjectMVVM' do
   pod 'RxSwift',    '~> 2.0'
   pod 'RxCocoa',    '~> 2.0'
   pod 'Alamofire', '~> 3.3'
+  pod 'Swinject', '~> 1.1.0'
 end
 
 target 'SwinjectMVVMTests' do

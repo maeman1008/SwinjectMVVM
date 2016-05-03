@@ -10,6 +10,7 @@ PODS:
   - RxSwift (2.4)
   - RxTests (2.4):
     - RxSwift (~> 2.4)
+  - Swinject (1.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - RxCocoa (~> 2.0)
   - RxSwift (~> 2.0)
   - RxTests (~> 2.0)
+  - Swinject (~> 1.1.0)
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
@@ -30,5 +32,6 @@ SPEC CHECKSUMS:
   RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
   RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
   RxTests: 8b9691e6476dfa6025fae9a69f449bf4cb5e5cfc
+  Swinject: 8c1b46e49c604f8c5c1f45f92ef314d3736bbef4
 
 COCOAPODS: 0.39.0
